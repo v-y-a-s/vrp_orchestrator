@@ -1,0 +1,41 @@
+
+// Calling to send deliveries to  OPTA
+// Constraint : less than 80 deliveries. 
+// Need to incoroprate matrix sub construction for larger delivery numbers 
+
+###
+post  http://localhost:3000/optimize
+Content-Type: application/json
+
+{
+  "CAPACITY" : 48000,
+  "VEHICLES" : 5,
+  "LOC_WT": [
+{
+  "LOC": "227 W Monroe St Chicago IL 60606 USA",
+  "WT": 0,
+  "ID": "1"
+},
+{
+  "LOC": "UNITED PIPE & STEEL CORP. - WH 2516 INDUSTRY DRIVE BURLINGTON 27215",
+  "WT": 42000,
+  "ID": "2"
+},
+{
+  "LOC": "UNITED PIPE & STEEL CORP. - WH 83 TURNPIKE ROAD IPSWICH 1938",
+  "WT": 45000,
+  "ID": "3"
+}
+  ]
+}
+
+
+// Get Solution from OPTA in JSON
+### 
+
+get http://localhost:3000/solution/json
+
+// Get Solution from OPTA in XML
+### 
+
+get http://localhost:3000/solution/xml

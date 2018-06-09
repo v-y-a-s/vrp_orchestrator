@@ -1,0 +1,25 @@
+{
+  "name": "vrp_orchestrator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Vyas Sarangapani",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "content-disposition": "^0.5.2",
+    "express": "^4.16.3",
+    "express-xml-bodyparser": "^0.3.0",
+    "js2xmlparser": "^3.0.0",
+    "memfs": "^2.9.0",
+    "node-geocoder": "^3.22.0",
+    "touch": "^3.1.0",
+    "xml2js": "^0.4.19"
+  }
+}
